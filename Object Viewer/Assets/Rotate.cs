@@ -16,6 +16,6 @@ public class Rotate : MonoBehaviour {
             CameraFacing.transform.rotation * Vector3.forward * CameraDistance;
         
         transform.Rotate(CameraSightVector.y - transform.position.y, transform.position.x - CameraSightVector.x, transform.position.z - CameraSightVector.z, Space.World);
-        
+
     }
 }
