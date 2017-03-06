@@ -13,6 +13,7 @@ public class Reticle : MonoBehaviour {
 	void Update () {
         transform.LookAt(CameraFacing.transform.position);
         transform.Rotate(0.0f, 180.0f, 0.0f);
+        transform.localScale = new Vector3(0.1025159F, 0.09258702F, 1);
         transform.position = CameraFacing.transform.position +
             CameraFacing.transform.rotation * Vector3.forward * 2;
 	}
